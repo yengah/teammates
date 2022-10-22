@@ -69,13 +69,15 @@ export class InstructorHomePageComponent extends InstructorSessionModalPageCompo
 
   instructorCoursesSortBy: SortBy = SortBy.COURSE_CREATION_DATE;
 
-  // data
+  // data.
   courseTabModels: CourseTabModel[] = [];
 
   hasCoursesLoaded: boolean = false;
   hasCoursesLoadingFailed: boolean = false;
   isNewUser: boolean = false;
   isCopyLoading: boolean = false;
+  isAddNewCourseFormExpanded: boolean = false;
+  isLoading: boolean = false;
 
   constructor(statusMessageService: StatusMessageService,
               navigationService: NavigationService,
